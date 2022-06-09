@@ -11,6 +11,7 @@ namespace UnityEditor.Rendering.HighDefinition
         public SerializedProperty enableDLSS;
         public SerializedProperty useMipBias;
         public SerializedProperty DLSSPerfQualitySetting;
+        public SerializedProperty DLSSInjectionPoint;
         public SerializedProperty DLSSUseOptimalSettings;
         public SerializedProperty DLSSSharpness;
         public SerializedProperty maxPercentage;
@@ -30,6 +31,7 @@ namespace UnityEditor.Rendering.HighDefinition
             enableDLSS = root.Find((GlobalDynamicResolutionSettings s) => s.enableDLSS);
             useMipBias = root.Find((GlobalDynamicResolutionSettings s) => s.useMipBias);
             DLSSPerfQualitySetting = root.Find((GlobalDynamicResolutionSettings s) => s.DLSSPerfQualitySetting);
+            DLSSInjectionPoint = root.Find((GlobalDynamicResolutionSettings s) => s.DLSSInjectionPoint);
             DLSSUseOptimalSettings = root.Find((GlobalDynamicResolutionSettings s) => s.DLSSUseOptimalSettings);
             DLSSSharpness = root.Find((GlobalDynamicResolutionSettings s) => s.DLSSSharpness);
             maxPercentage = root.Find((GlobalDynamicResolutionSettings s) => s.maxPercentage);
